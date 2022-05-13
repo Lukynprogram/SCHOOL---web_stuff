@@ -1,0 +1,100 @@
+<head>
+    <title>Formulare</title>
+    <link rel="stylesheet" href="formular.css" type="text/css">
+</head>
+
+<body>
+    <fieldset id="zaklad">
+        <legend>Zakladni udaje</legend>
+        <label for="jmeno">Jmeno</label> <br/>
+        <input type="text" name="jmeno" id="jmeno" dir="ltr" tabindex="1"> <br/>
+        <label for="prijmeni">Prijmeni</label> <br/>
+        <input type="text" id="prijmeni" name="prijmeni">
+        <p>
+            Pohlaví
+            <br/>
+            <input type='radio' name="pohlavi" value='muž'>Muž
+            <input type='radio' name="pohlavi" value='žena' checked>Žena
+        </p>
+        Rok narozeni <br/>
+        <input type="text" name="narozeni" size="5" maxlength="4" tabindex="4">
+        <p>
+            Vzdelani: <br/>
+            <select name="Vzdelani" size='1'>
+                <optgroup label='Zakladni'>
+                <option value='Nic'>Nedokoncene zakladni</option>
+                <option value='idk'>Zakladni</option>
+                </optgroup>
+                <optgroup label='Stredoskolske'>
+                <option value='Mat'>Nedokoncene stredni</option>
+                <option value='Mat'>Maturita</option>
+                <option value='Mat'>Vyucni list</option>
+                </optgroup>
+                <optgroup label="Vysokoskolske">
+                <option value='kyp'>Nedokncene vysokoskolske</option>
+                <option value='HW'>Vysokoskolske bakalarske</option>
+                <option value='Mat'>Vysokoskolske magisterske</option>
+                <option value='Mat'>Vysokoskolske jine</option>
+                </optgroup>
+            </select>
+    </fieldset>
+
+    <fieldset id="zaklad">
+        <legend>Kontaktni udaje</legend>
+        Ulice, čp.: <br/>
+        <input type="text" name="Ulice, cp.:" id="bydliste" dir="ltl"> <br/> Město: <br/>
+        <input type="text" name="mesto" id="mesto" dir="ltl"> <br/> PSČ: <br/>
+        <input type="text" name="psc" id="psc" dir="ltl"> <br/> Mobil: <br/>
+        <input type="text" name="mobil" id="mobil" dir="ltl"> <br/> Email: <br/>
+        <input type="text" name="email" id="email" dir="ltl"> <br/>
+    </fieldset>
+    <br/>
+
+
+    <fieldset id="ridicak">
+        <legend>Ridicak</legend><br/>
+        <input type='checkbox' name="policka" value='A'>A<br/>
+        <input type='checkbox' name="policka" value='b'>B<br/>
+        <input type='checkbox' name="policka" value='c'>C<br/>
+        <input type='checkbox' name="policka" value='D'>D<br/>
+        <input type='checkbox' name="policka" value='T'>T<br/>
+    </fieldset>
+
+
+    <fieldset id="jazyk">
+        <legend>Jazykove znalosti - AJ</legend><br/>
+        <input type='checkbox' name="policka" value='A'>Pokrocile<br/>
+        <input type='checkbox' name="policka" value='b'>Mirne pokrocile<br/>
+        <input type='checkbox' name="policka" value='c'>Zakladni<br/>
+        <input type='checkbox' name="policka" value='D'>Zadne<br/>
+    </fieldset>
+
+
+    <fieldset id="nemcina">
+        <legend>Jazykove znalosti - NJ</legend><br/>
+        <input type='checkbox' name="policka" value='A'>Pokrocile<br/>
+        <input type='checkbox' name="policka" value='b'>Mirne pokrocile<br/>
+        <input type='checkbox' name="policka" value='c'>Zakladni<br/>
+        <input type='checkbox' name="policka" value='D'>Zadne<br/>
+    </fieldset>
+
+
+    <fieldset id="dalsi">
+        <legend>Dalsi jazykove znalosti</legend><br/>
+        <select name="Vzdelani" size='1'>
+        <option value='Nic'>francoustina</option>
+        <option value='Mat'>Italstina</option>
+        <option value='kyp'>Rustina</option>
+        <option value='prog'>Japonstina</option>
+        </select>
+    </fieldset>
+
+    <br/><br/>
+
+    <fieldset id="zaklad" class="cistic">
+        <legend>Dalsi informace</legend>
+        <textarea name="text" rows="5" cols="100">Chci doplnit</textarea>
+    </fieldset>
+    <br/>
+    <input type='submit' value="Odeslat" id="odeslat">
+</body>
